@@ -12,10 +12,15 @@ activityRouter
     next();
   })
   .get((req, res) => {
-    res.end("Will send all the activities to you");
+    res.write("Will send all the activities matching the query:");
+    res.end(`${JSON.stringify(req.query)}`);
   })
   .post((req, res) => {
-    res.end(`Will add the activity: ${req.body}`);
+    // TODO: validate request body
+
+    // TODO: insert activity into database
+    res.write(`received request to add activity object:`);
+    res.end(`${JSON.stringify(req.body)}`);
   })
   .put((req, res) => {
     res.statusCode = 403;
