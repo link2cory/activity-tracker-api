@@ -1,0 +1,15 @@
+{
+  "name": "activity-tracker-api",
+  "version": "1.0.0",
+  "description": "API for the activity-tracker project",
+  "main": "index.js",
+  "author": "Cory Perkins",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}
